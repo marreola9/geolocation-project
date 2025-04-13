@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StatusBar } from "react-native";
-import MapView from "react-native-maps";
+import MapView, { Marker } from "react-native-maps";
 import styles from "./styles";
 
 StatusBar.setBarStyle("dark-content");
@@ -14,7 +14,7 @@ export default function App() {
         showsUserLocation
         followUserLocation
       >
-        <MapView.Marker
+        <Marker
           title="Duff Brewery"
           description="Duff beer for me, Duff beer for you"
           coordinate={{
@@ -22,7 +22,7 @@ export default function App() {
             longitude: -79.086082,
           }}
         />
-        <MapView.Marker
+        <Marker
           title="Pawtucket Brewery"
           description="New! Patriot Light!"
           coordinate={{
